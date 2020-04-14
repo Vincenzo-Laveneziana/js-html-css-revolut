@@ -72,14 +72,21 @@ body{
 .navigation_menu .choise {
   width: 60%;
   justify-content: flex-end;
+  position: relative;
 }
 
-.navigation_menu .choise a{
+.navigation_menu .choise li {
+  list-style: none;
   margin-left: 30px;
+  position: relative;
+}
+
+.navigation_menu .choise li > a{
   text-decoration: none;
   font-weight: 500;
   font-size: 15px;
   color: rgb(75, 75, 75);
+  
 }
 
 .navigation_menu .choise button{
@@ -94,7 +101,33 @@ body{
 }
 
 .navigation_menu .choise button:hover{
-  box-shadow: 0 0 2px;
+  box-shadow: 0 0 2px rgba(0, 150, 175, 0.726); 
+  
 }
+
+.navigation_menu .choise .drop_down{
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  left: -10px;
+  top: 25px;
+  padding: 10px 10px;
+  box-shadow: 0 0 2px rgba(209, 150, 175, 0.726); 
+}
+
+.navigation_menu .choise .drop_down a{
+  padding: 5px  0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(75, 75, 75);
+  white-space: nowrap;
+}
+
+
+
+
+
 
 

@@ -34,12 +34,36 @@
         </div>
 
         <div class="choise flex align_center">
-          <a href="#">Tariffazione</a>
-          <a href="#">Conti</a>
-          <a href="#">Prodotti</a>
-          <a href="#">Azienda</a>
-          <a href="#">Aiuto</a>
-          <a href="#">IT</a>
+          <ul class="flex">
+            <li><a href="#">Tariffazione</a></li>
+            <li class="actions">
+              <a href="#">Conti</a>
+               <div class="drop_down flex ">
+                <a href="#">Standard</a>
+                <a href="#">Premium</a>
+                <a href="#">Metal</a>
+              </div> 
+            </li>
+            <li class="actions">
+              <a href="#">Prodotti</a>
+              <div class="drop_down flex ">
+                <a href="#">Tresferimento</a>
+                <a href="#">Invia e richiedi</a>
+                <a href="#">Salvadanaio</a>
+                <a href="#">Gestione budget</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">Azienda</a>
+            </li>
+            <li>
+              <a href="#">Aiuto</a>
+            </li>
+            <li>
+              <a href="#">IT</a>
+            </li>
+          </ul>
+          
           <button>Scarica l'app</button>
         </div>
       
@@ -69,7 +93,10 @@
 
 
   <!-- JS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   
 </body>
