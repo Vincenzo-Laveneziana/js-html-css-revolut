@@ -76,8 +76,14 @@ body{
 }
 
 .navigation_menu .choise li {
+  display: inline;
   list-style: none;
   margin-left: 30px;
+  position: relative;
+  padding: 5px 0;
+}
+
+.navigation_menu .choise li.actions{
   position: relative;
 }
 
@@ -86,14 +92,25 @@ body{
   font-weight: 500;
   font-size: 15px;
   color: rgb(75, 75, 75);
-  
+}
+
+.navigation_menu .choise li > i{
+  position: absolute;
+  font-size: 10px;
+  bottom: 7px;
+  right: -10px;
+  color: rgb(75, 75, 75);
+}
+
+.navigation_menu .choise li:hover i{
+  transform: rotate(180deg);
 }
 
 .navigation_menu .choise button{
   padding: 10px 20px;
   margin-left: 20px;
   border-radius: 20px;
-  border: 0;
+  border: 1px solid transparent;
   outline: none;
   cursor: pointer;
   background: #EB008E;
@@ -101,31 +118,38 @@ body{
 }
 
 .navigation_menu .choise button:hover{
-  box-shadow: 0 0 2px rgba(0, 150, 175, 0.726); 
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); 
+  border: 1px solid transparent;
   
 }
 
 .navigation_menu .choise .drop_down{
   display: none;
   position: absolute;
-  z-index: 10;
-  left: -10px;
-  top: 25px;
-  padding: 10px 10px;
-  box-shadow: 0 0 2px rgba(209, 150, 175, 0.726); 
+  border-radius: 5px;
+  left: -30px;
+  top: 38px;
+  padding: 0 15px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px; 
 }
-
 
 
 .navigation_menu .choise .drop_down a{
-  
-  line-height: 40px;
+  display: block;
+  padding: 15px 15px;
+  /* line-height: 30px; */
   text-decoration: none;
   font-weight: 500;
   font-size: 15px;
-  color: rgb(75, 75, 75);
+  color: #6e6e6e;
   white-space: nowrap; 
 }
+
+.navigation_menu .choise .drop_down a sup{
+  font-size: 11px;
+  color:#EB008E;
+}
+
 
 .navigation_menu .choise .drop_down .box{
   margin: 10px;
