@@ -36,7 +36,6 @@ body{
 .container{
   width: 1200px;
   min-height: 20px;
-  
 }
 
 
@@ -61,7 +60,7 @@ body{
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 500;
-  color: rgb(75, 75, 75);
+  color: #707070;
 }
 
 .navigation_menu .logo :nth-child(2){
@@ -91,8 +90,13 @@ body{
   text-decoration: none;
   font-weight: 500;
   font-size: 15px;
-  color: rgb(75, 75, 75);
+  color: #707070;
 }
+
+.navigation_menu .choise li > a:hover{
+  color: hsl(0, 0%, 13%);
+}
+
 
 .navigation_menu .choise li > i{
   position: absolute;
@@ -145,6 +149,10 @@ body{
   white-space: nowrap; 
 }
 
+.navigation_menu .choise .drop_down a:hover{
+  color: hsl(0, 0%, 13%);
+}
+
 .navigation_menu .choise .drop_down a sup{
   font-size: 11px;
   color:#EB008E;
@@ -155,7 +163,6 @@ body{
   margin: 10px;
   padding: 10px 0 ;
   line-height: 40px;
-  
 }
 
 
